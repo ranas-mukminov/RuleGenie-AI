@@ -1,0 +1,19 @@
+title: Suspicious Encoded PowerShell
+description: Detect PowerShell executions using encoded commands
+logsource:
+  platform: windows
+  product: sysmon
+  service: process_creation
+detection:
+  selection:
+    Image|endswith: "\powershell.exe"
+    CommandLine|contains: "-enc"
+  condition: selection
+fields:
+  - Image
+  - CommandLine
+tags:
+  - powershell
+level: high
+references:
+  - T1059.001

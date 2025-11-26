@@ -1,0 +1,2 @@
+{"Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "CommandLine": "powershell.exe -nop -enc aW52b2tl", "User": "attacker", "EventID": 1, "is_malicious": true}
+{"Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "CommandLine": "powershell.exe Get-Process", "User": "admin", "EventID": 1, "is_malicious": false}
